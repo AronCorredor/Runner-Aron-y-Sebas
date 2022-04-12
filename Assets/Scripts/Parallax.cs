@@ -5,6 +5,7 @@ public class Parallax : MonoBehaviour
     public GameObject cam;
     private float length, startPos;
     public float parallaxEffect;
+    public GameObject player;
 
     void Start()
     {
@@ -20,4 +21,5 @@ public class Parallax : MonoBehaviour
             transform.localPosition = new Vector3(20, transform.localPosition.y, transform.localPosition.z);
         }
     }
+
 }
