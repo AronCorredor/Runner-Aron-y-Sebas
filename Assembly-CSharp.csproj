@@ -64,10 +64,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BarraDeProgreso.cs" />
     <Compile Include="Assets\Scripts\Controller_Enemy.cs" />
     <Compile Include="Assets\Scripts\Controller_Hud.cs" />
     <Compile Include="Assets\Scripts\Controller_Instantiator.cs" />
+    <Compile Include="Assets\Scripts\Controller_Nafta.cs" />
     <Compile Include="Assets\Scripts\Controller_Player.cs" />
+    <Compile Include="Assets\Scripts\Instantiator_Nafta.cs" />
     <Compile Include="Assets\Scripts\Parallax.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
     <Reference Include="UnityEngine">

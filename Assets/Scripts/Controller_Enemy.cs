@@ -23,4 +23,12 @@ public class Controller_Enemy : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(this.gameObject);
+        }
+
+    }
 }
