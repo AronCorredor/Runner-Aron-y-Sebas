@@ -6,7 +6,6 @@ public class Parallax : MonoBehaviour
     private float length, startPos;
     public float parallaxEffect;
     public GameObject player;
-    public
 
     void Start()
     {
@@ -20,6 +19,11 @@ public class Parallax : MonoBehaviour
         if (transform.localPosition.x < -20)
         {
             transform.localPosition = new Vector3(20, transform.localPosition.y, transform.localPosition.z);
+        }
+
+        if (Controller_Hud.gameOver == true)
+        {
+            transform.localPosition = new Vector3(0, transform.localPosition.y, transform.localPosition.z);
         }
     }
 
