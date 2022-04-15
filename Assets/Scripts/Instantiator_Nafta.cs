@@ -19,7 +19,7 @@ public class Instantiator_Nafta : MonoBehaviour
         ChangeVelocity();
     }
 
-    private void ChangeVelocity()
+    private void ChangeVelocity() //Cambia la velocidad 
     {
         time += Time.deltaTime;
         Controller_Nafta.naftaVelocity = Mathf.SmoothStep(1f, 15f, time / 45f);
@@ -31,8 +31,8 @@ public class Instantiator_Nafta : MonoBehaviour
 
         if (respawningTimer <= 0)
         {
-            Instantiate(Gasolina[UnityEngine.Random.Range(0, Gasolina.Count)], instantiatePos.transform);
-            respawningTimer = UnityEngine.Random.Range(2, 6);
+            Instantiate(Gasolina[UnityEngine.Random.Range(0, Gasolina.Count)], instantiatePos.transform); // Spawnea la nafta
+            respawningTimer = UnityEngine.Random.Range(2, 6); //Le da un valor random a cada cuanto se va a spawnear nafta
         }
     }
 }

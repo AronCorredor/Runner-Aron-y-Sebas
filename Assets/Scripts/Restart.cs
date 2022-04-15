@@ -10,6 +10,7 @@ public class Restart : MonoBehaviour
 
     private void GetInput()
     {
+        //Si toca R entonces reinicia
         if (Input.GetKeyDown(KeyCode.R))
         {
             Time.timeScale = 1;

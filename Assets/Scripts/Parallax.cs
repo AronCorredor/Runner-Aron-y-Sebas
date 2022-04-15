@@ -9,12 +9,15 @@ public class Parallax : MonoBehaviour
 
     void Start()
     {
+        //Instanciar valores fondo
         startPos = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
     void Update()
     {
+
+        //Loopear fondo
         transform.position = new Vector3(transform.position.x - parallaxEffect, transform.position.y, transform.position.z);
         if (transform.localPosition.x < -20)
         {

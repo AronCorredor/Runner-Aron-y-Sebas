@@ -19,13 +19,13 @@ public class Controller_Instantiator : MonoBehaviour
         ChangeVelocity();
     }
 
-    private void ChangeVelocity()
+    private void ChangeVelocity() //Controlador de la velocidad de los enemigos segun mas pasa el tiempo
     {
         time += Time.deltaTime;
         Controller_Enemy.enemyVelocity = Mathf.SmoothStep(1f, 15f, time / 45f);
     }
 
-    private void SpawnEnemies()
+    private void SpawnEnemies() //Generar enemigos randoms despues de un debido timer
     {
         respawningTimer -= Time.deltaTime;
 
