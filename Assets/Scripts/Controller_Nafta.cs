@@ -29,7 +29,7 @@ public class Controller_Nafta : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")) 
         {
             Destroy(this.gameObject);
-            Controller_Hud.timeUntilLose += 20;
+            BarraDeProgreso.cont = 100;
         }
 
     }

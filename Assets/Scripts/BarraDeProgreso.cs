@@ -10,7 +10,7 @@ public class BarraDeProgreso : MonoBehaviour
     public float max;
     public float act;
     public Text valorString;
-    int cont = 100;
+    public static int cont = 100;
     public GameObject gasolina;
     public GameObject player;
 

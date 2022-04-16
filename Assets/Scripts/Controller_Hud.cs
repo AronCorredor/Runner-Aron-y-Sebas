@@ -39,14 +39,5 @@ public class Controller_Hud : MonoBehaviour
             distance += Time.deltaTime;
             distanceText.text = distance.ToString("f0");
         }
-
-
-        //Resta el tiempo, lo regenera la Nafta en Controller_Nafta
-        timeUntilLose -= Time.deltaTime;
-
-        if (timeUntilLose <= 0)
-        {
-            gameOver = true;
-        }
     }
 }
