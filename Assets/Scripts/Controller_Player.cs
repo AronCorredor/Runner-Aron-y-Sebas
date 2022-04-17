@@ -28,13 +28,10 @@ public class Controller_Player : MonoBehaviour
     private void Jump()
     {
         
-        if (floored) //Si esta en el piso
-        {
-            if (Input.GetKeyDown(KeyCode.W)) //Si esta en el piso + Toca W
+            if (Input.GetKey(KeyCode.W)) //Si esta en el piso + Toca W
             {
                 rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse); // +Fuerza en Y
             }
-        }
     }
 
     private void Duck()
@@ -62,7 +59,7 @@ public class Controller_Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.S))// Dar fuerza hacia abajo en el aire
             {
-                rb.AddForce(new Vector3(0, -jumpForce, 0), ForceMode.Impulse);
+                rb.AddForce(new Vector3(0, -jumpForce * 5, 0), ForceMode.Impulse);
             }
         }
     }
