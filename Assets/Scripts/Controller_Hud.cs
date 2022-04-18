@@ -16,6 +16,7 @@ public class Controller_Hud : MonoBehaviour
 
     void Start()
     {
+        BarraDeProgreso.cont = 100;
         timeUntilLose = maxTimeUntilLose;
         gameOver = false;
         distance = 0;

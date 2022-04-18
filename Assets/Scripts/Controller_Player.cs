@@ -14,7 +14,7 @@ public class Controller_Player : MonoBehaviour
         initialSize = rb.transform.localScale.y;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         GetInput();
     }
@@ -59,7 +59,7 @@ public class Controller_Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.S))// Dar fuerza hacia abajo en el aire
             {
-                rb.AddForce(new Vector3(0, -jumpForce * 5, 0), ForceMode.Impulse);
+                rb.AddForce(new Vector3(0, -jumpForce * 5, 0), ForceMode.Impulse) ;
             }
         }
     }
